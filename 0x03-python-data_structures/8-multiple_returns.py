@@ -6,5 +6,4 @@ def multiple_returns(sentence):
     if length > 0:
         return length, sentence[0]
     else:
-        length = 0
         return length, None
