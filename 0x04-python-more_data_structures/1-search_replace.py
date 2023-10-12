@@ -9,5 +9,5 @@ def search_replace(my_list, search, replace):
             list_copy[i] = replace
             check = True
     if not check:
-        return None
+        return my_list
     return list_copy
