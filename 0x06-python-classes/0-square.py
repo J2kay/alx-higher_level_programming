@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""This is a hash bang header"""
+
 
 class Square:
-    """This class defines a square"""
+    """This class does nothing for now"""
     pass
