@@ -1,0 +1,24 @@
+# External doctest for say_my_name function
+
+# Test with first name and last name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Jeffrey", "Karikari")
+My name is Jeffrey Karikari
+
+# Test with only the first name
+>>> say_my_name("Alice")
+My name is Alice 
+
+# Test with an integer as the first name
+>>> say_my_name(123, "Smith")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+# Test with an integer as the last name
+>>> say_my_name("Bob", 456)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
