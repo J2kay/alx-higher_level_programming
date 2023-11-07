@@ -1,0 +1,35 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+# Test case 1: Valid integer input
+# Ensure the method does not raise an exception
+# The method should not return anything.
+# >>> base_geometry.integer_validator("test_value", 42)
+
+# Test case 2: Non-integer input
+# Ensure the method raises a TypeError with the proper message
+# >>> base_geometry.integer_validator("test_value", "42")
+# Traceback (most recent call last):
+# ...
+# TypeError: test_value must be an integer
+
+# Test case 3: Negative integer input
+# Ensure the method raises a ValueError with the proper message
+# >>> base_geometry.integer_validator("test_value", -42)
+# Traceback (most recent call last):
+# ...
+# ValueError: test_value must be greater than 0
+
+# Test case 4: Zero input
+# Ensure the method raises a ValueError with the proper message
+# >>> base_geometry.integer_validator("test_value", 0)
+# Traceback (most recent call last):
+# ...
+# ValueError: test_value must be greater than 0
+
+# Test case 5: No value provided
+# Ensure the method raises a TypeError with the proper message
+# >>> base_geometry.integer_validator("test_value", None)
+# Traceback (most recent call last):
+# ...
+# TypeError: test_value must be an integer
+
