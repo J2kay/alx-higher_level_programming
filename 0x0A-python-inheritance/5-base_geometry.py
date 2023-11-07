@@ -3,8 +3,9 @@
     an empty class BaseGeometry.
     """
 
+
 class BaseGeometry:
     """
-    an empty class
+    an empty class BaseGeometry.
     """
     pass
