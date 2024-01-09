@@ -16,4 +16,4 @@ const sort = myArray.sort(function (a, b) {
   return a - b;
 });
 
-console.log(sorted[length - 2]);
+console.log(sort[length - 2]);
