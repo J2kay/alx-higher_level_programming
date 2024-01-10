@@ -6,7 +6,7 @@ class Square extends PrevSquare {
   charPrint (c) {
     const rec2 = c === undefined ? 'X' : c;
     for (let i = 0; i < this.height; i++) {
-      let rec2 = '';
+      let rec = '';
       let y = 0;
       while (y < this.width) {
         rec += rec2;
