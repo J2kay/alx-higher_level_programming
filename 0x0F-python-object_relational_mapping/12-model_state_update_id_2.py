@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-prints the State object with the name
-passed as argument from the databasehbtn_0e_6_usa
+changes the name of a State object from the database
 """
 import sys
 from model_state import Base, State
@@ -10,7 +9,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
-    access database codesource
+    Access database codesource
     """
     engine = create_engine(
         "mysql+mysqldb://{}:{}@localhost/{}".format(
@@ -22,8 +21,8 @@ if __name__ == "__main__":
 
     session = Session()
 
-    state = session.query(State).filter(State.name == sys.argv[4]).first()
-    if state is not None:
-        print('{0}'.format(state.id))
-    else:
-        print("Not found")
+    state = session.query(State).filter(State.id == 2).first()
+    state.name = "New Mexico"
+    session.commit()
+
+    session.close()
