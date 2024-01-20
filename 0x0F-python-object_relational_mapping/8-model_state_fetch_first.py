@@ -13,7 +13,7 @@ if __name__ == "__main__":
     """
     Access database and get a state
     from the database.
-    """    
+    """
     db_url = "mysql+mysqldb://{}:\
     {}@localhost:3306/{}".format(argv[1], argv[2], argv[3])
 
