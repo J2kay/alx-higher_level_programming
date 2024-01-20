@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
-    access database for objects
+    access the database for objects
     """
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost/{}'.format(
