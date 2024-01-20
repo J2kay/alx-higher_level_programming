@@ -11,11 +11,13 @@ from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == '__main__':
+    # Parse command line arguments and create a database connection
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
                            format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
+    # Create a session to interact with the database
     Session = sessionmaker(bind=engine)
     session = Session()
 
